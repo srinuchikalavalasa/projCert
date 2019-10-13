@@ -1,20 +1,8 @@
-package package;
-
-import static org.junit.Assert.assertTrue;
-
-import org.junit.Test;
-
-/**
- * Unit test for simple App.
- */
-public class AppTest 
+<?php
+class MyTest extends PHPUnit_Framework_TestCase
 {
-    /**
-     * Rigorous Test :-)
-     */
-    @Test
-    public void shouldAnswerWithTrue()
-    {
-        assertTrue( true );
-    }
+    public function testBar() {
+        include "org/sample/app.php";
+        $this->fail("we will fail");
+    }	
 }
